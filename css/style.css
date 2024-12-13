@@ -103,6 +103,10 @@ h6 {
   font-weight: 400;
 }
 
+header {
+  position: relative;
+}
+
 .header__wrapper {
   background: #ffab08;
   position: absolute;
@@ -110,24 +114,11 @@ h6 {
   width: 2880px;
   height: 2880px;
   top: -2414px;
-  left: -720px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: -1;
-}
-@media (max-width: 1240px) {
-  .header__wrapper {
-    left: -828px;
-  }
-}
-@media (max-width: 1024px) {
-  .header__wrapper {
-    left: -928px;
-  }
-}
-@media (max-width: 900px) {
-  .header__wrapper {
-    top: -2480px;
-    left: -1028px;
-  }
 }
 
 .header__container {
